@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+	int choice;
+	printf("ENTER THE NUMBER BETWEEN 1 TO 5\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:
+			{
+				printf("FOOD ITEM - PASTA \nPRICE - Rs 179\n");
+				break;
+			}
+		case 2:
+			{
+				printf("FOOD ITEM - SANDWICH \nPRICE - Rs 149\n");
+				break;
+			}
+		case 3:
+			{
+				printf("FOOD ITEM - FRENCH FRIES \nPRICE - Rs 99\n");
+				break;
+			}
+	    case 4:
+	    	{
+	    		printf("FOOD ITEM - PIZZA \nPRICE - Rs 239\n");
+	    		break;
+			}
+		case 5:
+			{
+				printf("FOOD ITEM - BURGER \nPRICE - Rs 129\n");
+				break;
+			}
+		default:
+			{
+				printf("WRONG INPUT\n");
+			}
+	}
+	return 0;
+}
