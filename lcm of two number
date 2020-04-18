@@ -1,0 +1,22 @@
+#include<stdio.h>
+int lcm(int m,int n,int max);
+int main()
+{
+	int m,n,max;
+	printf("ENTER THE TWO NUMBERS\n");
+	scanf("%d%d",&m,&n);
+	max=(m<n)?n:m;
+	lcm(m,n,max);
+}
+int lcm(int m,int n,int max)
+{
+	while(1)
+	{
+		if(max%m==0&&max%n==0)
+		{
+			printf("LCM OF %d & %d IS %d",m,n,max);
+			break;
+		}
+		max++;
+	}
+}
