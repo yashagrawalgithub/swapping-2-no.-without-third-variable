@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	int a[3][3],*ptr=&a[0][0],b=0,i,j,sum=0;
+	printf("ENTER THE NINE ELEMENTS\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf(" %u ",*(ptr+b));
+			b++;
+		}
+		printf("\n");
+	}
+		for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			if(i==j)
+			{
+				sum=sum+a[i][j];
+			}
+		}
+    }
+    printf("SUM OF DIAGONAL IS %d",sum);
+}
